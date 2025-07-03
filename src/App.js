@@ -35,8 +35,8 @@ function App() {
           <h1 style={{ fontSize: 28, margin: '40px 0'}}>R$ 25.200</h1>
         </div>
 
-        <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 16 }}>
-          <div style={{ flex: 1, textAlign: 'center', padding: 10, marginRight: 8, border: '1px solid #ddd', borderRadius: 10 }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 16, background: 'f3f4f6' }}>
+          <div style={{ flex: 1, textAlign: 'center', padding: 10, marginRight: 8, border: '1px solid #ddd', borderRadius: 10, }}>
             <p>Receitas</p>
             <p style={{ color: 'green', fontWeight: 'bold' }}>R$ 10.000</p>
           </div>
@@ -45,8 +45,8 @@ function App() {
             <p style={{ color: 'red', fontWeight: 'bold' }}>R$ 8.250</p>
           </div>
         </div>
-
-        <h3>Despesas por Categoria</h3>
+        <div style={{ textAlign: 'left', margin: '16px 0', background: '#f3f4f6', padding: 16, borderRadius: 12 }}>
+          <h3>Despesas por Categoria</h3>
         <PieChart width={300} height={200}>
           <Pie
             data={data}
@@ -70,7 +70,9 @@ function App() {
           ))}
         </ul>
 
-        <h3 style={{ marginTop: 20 }}>Últimas Transações</h3>
+        </div>
+        <div style={{ textAlign: 'left', margin: '16px 0', background: '#f3f4f6', padding: 16, borderRadius: 12 }}>
+          <h3 style={{ marginTop: 20 }}>Últimas Transações</h3>
         <ul>
           {transactions.map((t, i) => (
             <li key={i} style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid #eee', padding: '4px 0' }}>
@@ -79,6 +81,7 @@ function App() {
             </li>
           ))}
         </ul>
+        </div>  
       </div>
     </div>
   );
