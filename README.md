@@ -1,3 +1,11 @@
+# Introdução 
+Dashborad Financeiro com React 
+
+Funcionalidades Principais:
+1. Visão Geral : \
+   Saldo Atual\
+   Gráfico de Pizza com distribuição das despesas por categoria
+   
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
